@@ -1,0 +1,66 @@
+Everyone is talking about how to secure their cloud environment but do you need a CASB? The only way you know whether or not you need a CASB is to evaluate your various use cases and so I will ask you to take step back to think through the top six use cases for CASBs.
+
+Making a decision around a CASB can be very challenging. Because if you see the functions of a CASB aren't extraordinary, they're not unique. They are extraordinary for what they do but when you review the list of CASB functions you might have a lot of tools within your current cybersecurity posture that deliver those functions but they don't deliver them in a cloud access environment or enable you to control the environments within distinct cloud frameworks. Your use cases will determine whether CASB will fit your organization.
+
+Let's take a look at some high level use case:
+
+Overview Device Security : First use case is personal device security and control
+when our employees are using their personal devices and this is a fundamental concept of SASE (secure access service edge) where gartner defines SASE has the ability of users to use any device from any location on any network to access their workloads. Being able to allow our employees to use their personal devices. Our contractors or vendors to access cloud environments which we may control has a lot of benefits but there's also a limitation so because we are not managing that device it's not a corporate device we cannot put an agent on that device generally, so CASBs resolved that problem by by implementing a reverse proxy which when the user attempts to log into the cloud environment that user will be redirected to the casb and the casb will then make the
+connection to the cloud environment.
+
+a lack of visibility into the device status allows us to avoid any sort of privacy issues where we're not monitoring any traffic on that outside of the specific traffic flow going into our specific cloud application and by doing so that allows that particular workload to be conducted without interfering with anything else on the user's machine, now CASB can adjust the authorization they can understand the context of that machine and determine whether or not they should allow broad access or maybe narrow access depending upon the configurations that the organization sets within the CASB. it creates a secure work environment by preventing data leakage it doesn't allow users for example based upon the settings that you provide but you can restrict users for example for downloading sensitive information or corporate information onto their personal device where maybe they can download information onto their corporate device.
+ the CASB will also scan for malware
+since we don't know the security posture of the particular device the casb will interrogate the flows between the cloud and the device and ensure that no malware is being uploaded.
+
+the next use case for casb is Data Protection
+data protection now casb are designed to protect data as their fundamental purpose they understand the context of the data. so casbs are smart enough based upon your training of course of the casbi but they're smart enough to recognize personal identifying information pii or maybe pci information health care information and so forth. it can assign a higher protection level to those sensitive data points and it can also do some things in terms of data manipulation.  the one that's probably used most frequently is the pseudonymization say that three times fast of data and what is pseudonymization
+that's when you replace identifying data let's say a birth date with generic data maybe you just use the birth year, rather so that piece of information is no longer identifying but it is still meaningful and meaningful in the way that you can still run analytics against a birth year just as you can a birth date.
+
+CASB can also limit access to data it will limit whether or not data can be viewed edited deleted or downloaded based upon the context and the
+permissions assigned to that particular user with api integration you can actually encrypt data now most caspers will still allow you to run analytics
+and do searches on that data even when it's encrypted so you're not losing access and functionality when that when that data has been encrypted
+and with an agent information can be scanned in transit so someone is simply sending an email that email even though is not going into a particular cloud
+environment can be interrogated can be searched and key information can be identified. 
+
+let's say keep product information for example or personal identifying information if it was contained in that email it can be tracked now if you're if your users are sending files to people both internal and external to your organization
+many CASB have a form of digital rights management which might force the recipient of that data to take some extra steps before they can open and
+view that data like establish an authentication.
+
+our next use case is account takeover Guard Against Account Take Over
+now most organizations have at least 10 and some organizations have upwards of a thousand individual cloud environments
+that they're managing and monitoring. so the risk of a individual account within any one of those cloud environments being taken over is real and CASBs can
+help with that CASB use user behavioral analytics through their detailed logging to ensure that users are operating consistently consistent
+with the norms that have been established previously over time. It'll challenge abnormal behavior with additional authentication for example or
+establish automatic limits such as preventing excess file downloads or preventing a user from accessing information that they normally don't
+access even though they might have permission if they see someone browsing a directory which they do have permission to view but they don't view frequently if they see excessive browsing in that directory they could limit or force that user into some other context before allowing that session to
+continue 
+
+Data Encryption
+
+ There's an individual use case around data encryption, that's really important if CASB has an api interface into a cloud application, you can frequently provide encryption of your data within that cloud environment now this allows you to independently encrypt rather than using the clouds and the cloud service providers encryption tools. You can independently encrypt your data preventing the cloud service provider from ever viewing your information
+ and it also prevents them from accessing that information and maybe delivering it to a third party.
+let's say under a  warrant of some sort
+now why would a cloud service provider look at your data and possibly give it to another uh organization? don't know but it happens and you can protect yourself
+by encrypting your data both at rest and in transit with a a cloud access security broker encryption algorithm 
+
+Identify Unsanctioned Applications : one of the early uses of casb was to identify shadow it or unsanctioned applications from being used by employees. now
+casbs will identify users that are utilizing these unauthorized cloud applications but you'll have to determine what to do with those events when they do transpire.
+most CASBs will provide you a risk score for the applications that your users may be accessing and that will inform your decision as to how to deal
+with the individual applications.
+
+you can of course provide coaching and counseling if it's an issue.  some organizations allow basic access to cloud applications let's say facebook as long as users are simply reading and posting innocuous content but the CASB can monitor the post and this is not necessarily snooping but what the casbie will do is it will look for keywords or key identifying information that uh that might reveal a risk to the organization and it will establish an audit trail of those interactions that will allow you to come back and establish a case in the future if necessary
+
+6. compliance :- compliance is a great use case for customer, in fact most people use casby for their compliance operations. Most casbs provide templates that'll help you comply or set up compliance policy for things like gdpr or the california consumer privacy act and other widely recognized compliance frameworks. CASBs record access to data and they also identify records that might exist across clouds so when someone exercises their right to be forgotten for example caspy can help you identify where that user has records so they can be properly deleted.
+
+the ability for CASBs to pseudomize information that's replacing identifying information with more innocuous or more generic information like a birth date
+with just a birth year, they can also minimize information which is completely deleting information that might be identifiable or tokenize information and now tokenize information is replacing information with no not with substitute non-identifiable information but it's different than encryption so encryption has a mathematical algorithm tokenized is more of a random replacement with individual pieces of information all of which help you maintain privacy of your users records when they're out in a cloud environment.
+
+
+Key Takeaways:
+1. CASB 's still a relatively new concept  for most business organizations  but since all of the workloads or 80% of the workloads according to gartner have been moved out to the cloud it's something that organizations really have to consider moving forward. the CASB decision has to be use case driven.
+There are at least 20 different CASB offerings that i can think of immediately & not all operate the same. they're not they really haven't been commoditized
+yet so you really have to understand your use case and work with the casb providers that you're considering to have them to demonstrate how your use cases are satisfied by their particular solution.
+be sure that you get both a forward proxy and a reverse proxy casb, not all of your users will be accessing the cloud environments from corporately
+owned computers where you can put an agent that would facilitate a forward proxy. reverse proxies allow your users to use pretty much any machine that they
+want to use while maintaining a high degree of security and control. Also look for CASB with APIs into your key cloud environments. This will create a huge opportunity for you to gain additional control over your data.
+
